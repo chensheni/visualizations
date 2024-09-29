@@ -4,4 +4,4 @@ This repository includes 3 visualization practices about different topics, using
 
 [embed]https://github.com/chensheni/visualizations/tree/main/using-Excel/coffeeOrdersData.pdf[/embed]
 
-![Alt text](/using-Excel/coffeeOrdersData.pdf "original photo")
+![Alt text](/demo/dashboard-excel.png "original photo")
