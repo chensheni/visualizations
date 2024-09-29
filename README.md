@@ -2,4 +2,6 @@
 
 This repository includes 3 visualization practices about different topics, using Excel, Power BI or Tableau.
 
-![Alt text](/using%20Excel/coffeeOrdersData.pdf "original photo")
+[embed]https://github.com/chensheni/visualizations/tree/main/using-Excel/coffeeOrdersData.pdf[/embed]
+
+![Alt text](/using-Excel/coffeeOrdersData.pdf "original photo")
