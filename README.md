@@ -2,14 +2,14 @@
 
 This repository includes 3 visualization practices about different topics, using Excel, Power BI or Tableau.
 
-EXCEL [Coffee Shop: Sales Performance]
+## EXCEL [Coffee Shop: Sales Performance]
 ![Alt text](/demos/dashboard-excel.png "original photo")
 
-POWERBI [Retail: Sales Performance]
+## POWERBI [Retail: Sales Performance]
 ![Alt text](/demos/dashboard-powerbi.png "original photo")
 
-1. Visual Elements
-  1.1. Dashboard Layout and Interactivity:
+### Visual Elements
+#### Dashboard Layout and Interactivity:
 The dashboard is designed with a central filter panel at the top, allowing users to choose a year and a metric to display (Profit, Quantity, Sales). This enhances interactivity and personalization for different data views. Key metrics, such as "YTD Profit," "Profit Change," "YTD Quantity," "Quant Change," and "Sales Change," are highlighted at the top. These provide an instant snapshot of critical figures, helping users quickly grasp the performance status.
 
   2. Treemap Visualization (YTD Values by Country):
