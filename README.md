@@ -33,7 +33,7 @@ FACT_SALES: This table holds transactional data, including Account_id, COGS_USD,
 DIM_DATE, DIM_PRODUCT, DIM_ACCOUNT: These dimension tables provide context for the fact table, covering date, product, and account details.
 _Measures table: This separate table contains calculated measures for profit, quantity, and sales metrics, allowing for efficient and centralized measure management.
 
-  2. Measures and Calculations:
+#### Measures and Calculations:
 Key DAX measures such as YTD Profit, PYTD Profit, Profit Change, and Sales Change calculate year-to-date, previous-year-to-date, and changes over time.
 
 PYTD_Profit = 
@@ -59,8 +59,8 @@ RETURN result
 
 This enables users to toggle between different metrics in a single visual, enhancing flexibility and reducing the need for multiple visuals.
 
-  3. Data Slicer and Filtering:
+#### Data Slicer and Filtering:
 Slicer_Values table provides the options for selecting different metrics (Profit, Quantity, Sales), which interact with the PYTD (switch) measure. This approach allows for a dynamic dashboard, where visuals update based on user selections.
 
-TABLEAU [Health: Covid-19 Vaccination]
+## TABLEAU [Health: Covid-19 Vaccination]
 ![Alt text](/demos/dashboard-tableau.png "original photo")
