@@ -5,6 +5,50 @@ This repository includes 3 visualization practices about different topics, using
 ## EXCEL [Coffee Shop: Sales Performance]
 ![Alt text](/demos/dashboard-excel.png "original photo")
 
+### Visual Elements
+
+#### Dashboard Layout and Interactivity
+Date Selector: The top panel includes a timeline selector allowing users to filter data by year and quarter, providing flexibility in viewing historical data trends.
+
+#### Slicers:
+Roast Type: Filter by roast type (Dark, Light, Medium).
+Loyalty Card: Filter by customer loyalty status (Yes/No).
+Size: Filter by coffee package size (e.g., 0.2 kg, 1.0 kg).
+Coffee Type: Filter by specific coffee varieties (e.g., Arbica, Excelsa, Liberica, Robusta).
+
+#### Key Metrics
+Whole Sales: Displays the total sales amount.
+Whole Profit: Shows the total profit generated.
+Profitability Ratio: Provides the profit as a percentage of sales, giving insights into profitability.
+
+#### Visualizations
+##### Line Chart (Total Sales Trend Over Time):
+Displays the sales trend over time for each coffee type (Arbica, Excelsa, Liberica, Robusta), allowing for seasonal and trend analysis.
+##### Bar Chart (Total Sales by Country):
+Visualizes sales by country, with each segment representing a different coffee type, showing geographic distribution and customer preferences.
+##### Dual-Axis Chart (Relationship Between Sales Amount and Order Number):
+Compares the frequency of orders (Order Count) against the sales amount, highlighting high-frequency orders and their contribution to total sales.
+
+### Technical Components
+
+#### Data Tables
+The workbook contains multiple data tables for different dimensions, including:
+Orders: Details each sale, including Roast Type, Coffee Type, Size, Profit, Sales, Total Profit, and Loyalty Card status.
+Customers: Stores customer details such as Customer ID, Name, Email, Phone Number, Address, and Loyalty Card status.
+Products: Lists available coffee products with specific details for indexing in the orders table.
+
+#### Key Formulas
+INDEX-MATCH for Product Lookup
+
+Used in the orders table to retrieve product details based on a combination of attributes.
+
+=INDEX(products!$A$1:$G$49, MATCH(orders!$D7, products!$A$1:$A$49, 0), MATCH(orders!$Q$1, products!$A$1:$G$1, 0))
+Retrieves specific information (e.g., Unit Price, Size) from the products table based on attributes like Roast Type and Coffee Type.
+
+#### Slicers and Filters
+Slicers are used to dynamically filter visuals and key metrics by roast type, loyalty status, coffee size, and coffee type. The timeline filter allows for time-based filtering by year and quarter, enabling comparative analysis over different periods.
+
+
 ## POWERBI [Retail: Sales Performance]
 ![Alt text](/demos/dashboard-powerbi.png "original photo")
 
